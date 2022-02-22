@@ -1,0 +1,50 @@
+
+body {
+
+    background-color: #FFECD1;
+    margin: auto;
+    text-align: center;
+    
+
+}
+
+#card {
+
+
+margin: auto;
+margin-top: 80px;
+
+color: white;
+padding: 5px;
+text-align:center;
+
+
+
+
+}
+
+table {
+
+    width: 600px;
+    border-radius: 2px;
+    margin: auto;
+    text-align: center;
+    background-color: brown;
+    border:2px solid green;
+}
+
+tr, td {
+    border: 2px solid black;
+    width: 300px;
+    padding: 15px;
+}
+
+img {
+
+    height: 100px;
+    width: 100px;
+}
+
+td#photo {
+    height:120px;
+}

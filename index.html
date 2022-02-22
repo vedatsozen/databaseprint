@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<div id="card">
+
+<table>
+    <tr><select id="member">
+
+        <option value="brad">BRAD PITT</option>
+        <option value="angelina">ANGELINA JOLIE</option>
+       
+       
+    
+    </select>
+    <button type="button" onclick="showdetails()">SEND</button>
+    </tr>
+    <tr></tr>
+    <tr><td>PHOTO:</td>
+        <td id="photo"></td>
+    <tr><td>NAME:</td>
+        <td id="name"></td>
+    </tr>
+    <tr><td>JOB:</td><td id="job"></td></tr>
+    <tr><td>AGE:</td><td id="age"></td></tr>
+    <tr><td>E-MAIL ADDRESS:</td><td id="email"></td></tr>
+    <tr><td>CITY:</td><td id="city"></td></tr>
+    
+</table>
+
+
+
+</div>
+
+<script>
+
+var brad = ['<img src="https://getwallpapers.com/wallpaper/full/e/d/8/959542-brad-pitt-wallpapers-3000x1992-photo.jpg">',"Brad Pitt","Actor","58","bradpitt@gmail.com","Los Angeles"]
+var angelina = ['<img src="https://i.pinimg.com/originals/54/ed/58/54ed58082c97453afc6fe8b57020f1b7.jpg">',"Angelina Jolie", "Actress","44","angelinajolie@gmail.com","New York"]
+
+
+function showdetails(){
+
+var newvalue = document.getElementById("member").value;
+
+
+if ( newvalue == "brad") {
+
+bradf();
+
+}
+
+else if ( newvalue == "angelina") {
+
+angelinaf();
+
+}
+
+}
+
+function bradf() {
+
+document.getElementById("photo").innerHTML = brad[0];
+document.getElementById("name").innerHTML = brad[1];
+document.getElementById("job").innerHTML = brad[2];
+document.getElementById("age").innerHTML = brad[3];
+document.getElementById("email").innerHTML = brad[4];
+document.getElementById("city").innerHTML = brad[5];
+
+
+}
+
+function angelinaf() {
+
+document.getElementById("photo").innerHTML = angelina[0];
+document.getElementById("name").innerHTML = angelina[1];
+document.getElementById("job").innerHTML = angelina[2];
+document.getElementById("age").innerHTML = angelina[3];
+document.getElementById("email").innerHTML = angelina[4];
+document.getElementById("city").innerHTML = angelina[5];
+
+}
+
+
+</script>
+
+</body>
+</html>
